@@ -41,7 +41,7 @@ public class CartController {
 		Optional<Item> item = itemRepository.findById(request.getItemId());
 		if(!item.isPresent()) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-		}
+        }
 		Cart cart = user.getCart();
 		IntStream.range(0, request.getQuantity())
 			.forEach(i -> cart.addItem(item.get()));
