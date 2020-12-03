@@ -1,0 +1,292 @@
+SuccessConsole Output
+Started by user admin
+Running as SYSTEM
+Building in workspace C:\Users\arslan\.jenkins\workspace\eCommerce
+The recommended git tool is: NONE
+No credentials specified
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/arslantx/ecommerce.git # timeout=10
+Fetching upstream changes from https://github.com/arslantx/ecommerce.git
+ > git.exe --version # timeout=10
+ > git --version # 'git version 2.17.1.windows.2'
+ > git.exe fetch --tags --progress -- https://github.com/arslantx/ecommerce.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/release-12-02-2020^{commit}" # timeout=10
+Checking out Revision 049307252cb318a9a8262c613c4fe9136c2ea311 (refs/remotes/origin/release-12-02-2020)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 049307252cb318a9a8262c613c4fe9136c2ea311 # timeout=10
+Commit message: "Adding splunk screenshots"
+ > git.exe rev-list --no-walk 049307252cb318a9a8262c613c4fe9136c2ea311 # timeout=10
+[eCommerce] $ cmd.exe /C "mvn clean package && exit %%ERRORLEVEL%%"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.example:auth-course >-----------------------
+[INFO] Building auth-course 0.0.1-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ auth-course ---
+[INFO] Deleting C:\Users\arslan\.jenkins\workspace\eCommerce\target
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ auth-course ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ auth-course ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 20 source files to C:\Users\arslan\.jenkins\workspace\eCommerce\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ auth-course ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ auth-course ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to C:\Users\arslan\.jenkins\workspace\eCommerce\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ auth-course ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.demo.controller.CartControllerTest
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/C:/Users/arslan/.m2/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/C:/Users/arslan/.m2/repository/org/slf4j/slf4j-log4j12/1.7.30/slf4j-log4j12-1.7.30.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+22:35:50.581 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.example.demo.controller.CartControllerTest]
+22:35:50.591 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+22:35:50.608 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+22:35:50.638 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.example.demo.controller.CartControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+22:35:50.657 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.controller.CartControllerTest], using SpringBootContextLoader
+22:35:50.664 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.controller.CartControllerTest]: class path resource [com/example/demo/controller/CartControllerTest-context.xml] does not exist
+22:35:50.666 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.example.demo.controller.CartControllerTest]: class path resource [com/example/demo/controller/CartControllerTestContext.groovy] does not exist
+22:35:50.668 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.example.demo.controller.CartControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+22:35:50.671 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.demo.controller.CartControllerTest]: CartControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:35:50.783 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.example.demo.controller.CartControllerTest]
+22:35:50.980 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [C:\Users\arslan\.jenkins\workspace\eCommerce\target\classes\com\example\demo\ECommerceApplication.class]
+22:35:50.986 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.demo.ECommerceApplication for test class com.example.demo.controller.CartControllerTest
+22:35:51.152 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.example.demo.controller.CartControllerTest]: using defaults.
+22:35:51.155 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+22:35:51.220 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@3de8f619, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2ab4bc72, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4e5ed836, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@eadd4fb, org.springframework.test.context.support.DirtiesContextTestExecutionListener@740fb309, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7bd7d6d6, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@43f02ef2, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@239a307b, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@2a8448fa, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6f204a1a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2de56eb2, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5f8e8a9d, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5745ca0e, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3ad83a66]
+22:35:51.236 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.controller.CartControllerTest]
+22:35:51.241 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.controller.CartControllerTest]
+22:35:51.246 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.controller.CartControllerTest]
+22:35:51.247 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.controller.CartControllerTest]
+22:35:51.248 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.controller.CartControllerTest]
+22:35:51.249 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.controller.CartControllerTest]
+22:35:51.264 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@aba625 testClass = CartControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@97e93f1 testClass = CartControllerTest, locations = '{}', classes = '{class com.example.demo.ECommerceApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@50b472aa, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@3911c2a7, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@bf0f1953, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@1ab3a8c8, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@47af7f3d], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+22:35:51.279 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.example.demo.controller.CartControllerTest]
+22:35:51.284 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.example.demo.controller.CartControllerTest]
+22:35:51.373 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2020-12-02 22:35:52.145  INFO 18424 --- [           main] c.e.demo.controller.CartControllerTest   : Starting CartControllerTest on E7450 with PID 18424 (started by arslan in C:\Users\arslan\.jenkins\workspace\eCommerce)
+2020-12-02 22:35:52.148  INFO 18424 --- [           main] c.e.demo.controller.CartControllerTest   : No active profile set, falling back to default profiles: default
+2020-12-02 22:35:54.547  INFO 18424 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-02 22:35:54.799  INFO 18424 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 214ms. Found 4 repository interfaces.
+2020-12-02 22:35:57.660  INFO 18424 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a2e3d825] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 22:35:58.161  INFO 18424 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-02 22:35:58.580  INFO 18424 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-02 22:35:58.802  INFO 18424 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-02 22:35:59.124  INFO 18424 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.10.Final}
+2020-12-02 22:35:59.142  INFO 18424 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-12-02 22:35:59.630  INFO 18424 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2020-12-02 22:36:00.687  INFO 18424 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-02 22:36:02.160  INFO 18424 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 22:36:04.381  INFO 18424 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@24520a51, org.springframework.security.web.context.SecurityContextPersistenceFilter@50b4e7b2, org.springframework.security.web.header.HeaderWriterFilter@1764e45e, org.springframework.web.filter.CorsFilter@2ae88712, org.springframework.security.web.authentication.logout.LogoutFilter@68f264bf, com.example.demo.security.JWTAuthenticationFilter@10508ba6, com.example.demo.security.JWTAuthenticationVerificationFilter@da11873, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6a0ee80, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@55202ba6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@39159b14, org.springframework.security.web.session.SessionManagementFilter@4745bcc6, org.springframework.security.web.access.ExceptionTranslationFilter@63243c8f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5dac6bc3]
+2020-12-02 22:36:05.784  INFO 18424 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-02 22:36:05.992  WARN 18424 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-02 22:36:07.273  INFO 18424 --- [           main] c.e.demo.controller.CartControllerTest   : Started CartControllerTest in 15.88 seconds (JVM running for 17.909)
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.275 s - in com.example.demo.controller.CartControllerTest
+[INFO] Running com.example.demo.controller.ItemControllerTest
+2020-12-02 22:36:07.416  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.controller.ItemControllerTest], using SpringBootContextLoader
+2020-12-02 22:36:07.418  INFO 18424 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.demo.controller.ItemControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-12-02 22:36:07.420  INFO 18424 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.demo.controller.ItemControllerTest]: ItemControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-12-02 22:36:07.424  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.demo.ECommerceApplication for test class com.example.demo.controller.ItemControllerTest
+2020-12-02 22:36:07.464  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2020-12-02 22:36:07.467  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@79f59e0e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@279ebd94, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@2fa4888c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@121f9c52, org.springframework.test.context.support.DirtiesContextTestExecutionListener@47cf65f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@156f0281, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1e041848, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@7097ead6, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@4c4be9d8, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@21dd91da, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1f251bf1, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@502b9399, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@433db56d, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@e23af91]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2020-12-02 22:36:07.619  INFO 18424 --- [           main] c.e.demo.controller.ItemControllerTest   : Starting ItemControllerTest on E7450 with PID 18424 (started by arslan in C:\Users\arslan\.jenkins\workspace\eCommerce)
+2020-12-02 22:36:07.621  INFO 18424 --- [           main] c.e.demo.controller.ItemControllerTest   : No active profile set, falling back to default profiles: default
+2020-12-02 22:36:08.240  INFO 18424 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-02 22:36:08.271  INFO 18424 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30ms. Found 4 repository interfaces.
+2020-12-02 22:36:08.561  INFO 18424 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a2e3d825] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 22:36:08.911  INFO 18424 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-12-02 22:36:08.918  INFO 18424 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-12-02 22:36:09.001  INFO 18424 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-02 22:36:09.028  INFO 18424 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-02 22:36:09.622  INFO 18424 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 22:36:10.379  INFO 18424 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e356940, org.springframework.security.web.context.SecurityContextPersistenceFilter@6ebf9c2d, org.springframework.security.web.header.HeaderWriterFilter@35bf6dba, org.springframework.web.filter.CorsFilter@38991781, org.springframework.security.web.authentication.logout.LogoutFilter@499445d2, com.example.demo.security.JWTAuthenticationFilter@3c577368, com.example.demo.security.JWTAuthenticationVerificationFilter@57c7ec30, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@753c7411, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ba015b1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@729de0e1, org.springframework.security.web.session.SessionManagementFilter@27caa186, org.springframework.security.web.access.ExceptionTranslationFilter@3df4cd96, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@58267ba1]
+2020-12-02 22:36:11.079  INFO 18424 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-02 22:36:11.124  WARN 18424 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-02 22:36:12.444  INFO 18424 --- [           main] c.e.demo.controller.ItemControllerTest   : Started ItemControllerTest in 4.963 seconds (JVM running for 23.079)
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.005 s - in com.example.demo.controller.ItemControllerTest
+[INFO] Running com.example.demo.controller.OrderControllerTest
+2020-12-02 22:36:12.523  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.controller.OrderControllerTest], using SpringBootContextLoader
+2020-12-02 22:36:12.538  INFO 18424 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.demo.controller.OrderControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-12-02 22:36:12.540  INFO 18424 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.demo.controller.OrderControllerTest]: OrderControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-12-02 22:36:12.548  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.demo.ECommerceApplication for test class com.example.demo.controller.OrderControllerTest
+2020-12-02 22:36:12.570  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2020-12-02 22:36:12.575  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@44103266, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@439b0198, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@c2dab10, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@6c4e11d0, org.springframework.test.context.support.DirtiesContextTestExecutionListener@29088d3d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3284de45, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5390862e, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@4fccdd1d, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@22c0c0bc, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@36a25457, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@61d4155b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@48590849, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6c38f4de, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@489c15e2]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2020-12-02 22:36:12.696  INFO 18424 --- [           main] c.e.demo.controller.OrderControllerTest  : Starting OrderControllerTest on E7450 with PID 18424 (started by arslan in C:\Users\arslan\.jenkins\workspace\eCommerce)
+2020-12-02 22:36:12.698  INFO 18424 --- [           main] c.e.demo.controller.OrderControllerTest  : No active profile set, falling back to default profiles: default
+2020-12-02 22:36:13.257  INFO 18424 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-02 22:36:13.288  INFO 18424 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29ms. Found 4 repository interfaces.
+2020-12-02 22:36:13.753  INFO 18424 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a2e3d825] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 22:36:14.193  INFO 18424 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-12-02 22:36:14.237  INFO 18424 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-12-02 22:36:14.329  INFO 18424 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-02 22:36:14.357  INFO 18424 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-02 22:36:14.704  INFO 18424 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 22:36:15.568  INFO 18424 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@650997b0, org.springframework.security.web.context.SecurityContextPersistenceFilter@65013d71, org.springframework.security.web.header.HeaderWriterFilter@7a8e484b, org.springframework.web.filter.CorsFilter@7337f87e, org.springframework.security.web.authentication.logout.LogoutFilter@20bf7206, com.example.demo.security.JWTAuthenticationFilter@77e24d3c, com.example.demo.security.JWTAuthenticationVerificationFilter@66831b14, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30a99b85, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@386d41cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f1ea463, org.springframework.security.web.session.SessionManagementFilter@643f8ebe, org.springframework.security.web.access.ExceptionTranslationFilter@5f815f93, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@bb3487c]
+2020-12-02 22:36:16.132  INFO 18424 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-02 22:36:16.156  WARN 18424 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-02 22:36:16.722  INFO 18424 --- [           main] c.e.demo.controller.OrderControllerTest  : Started OrderControllerTest in 4.143 seconds (JVM running for 27.358)
+2020-12-02 22:36:16.735  INFO 18424 --- [           main] c.e.demo.controllers.OrderController     : New order history request for user: testUser
+2020-12-02 22:36:16.740 ERROR 18424 --- [           main] c.e.demo.controllers.OrderController     : No user found with username: testUser
+2020-12-02 22:36:16.751  INFO 18424 --- [           main] c.e.demo.controllers.OrderController     : New order history request for user: testUser
+2020-12-02 22:36:16.761  INFO 18424 --- [           main] c.e.demo.controllers.OrderController     : New order submit request for user: testUser
+2020-12-02 22:36:16.762  INFO 18424 --- [           main] c.e.demo.controllers.OrderController     : Successfully submitted order for user: testUser
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.238 s - in com.example.demo.controller.OrderControllerTest
+[INFO] Running com.example.demo.controller.UserControllerTest
+2020-12-02 22:36:16.768  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.controller.UserControllerTest], using SpringBootContextLoader
+2020-12-02 22:36:16.769  INFO 18424 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.demo.controller.UserControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-12-02 22:36:16.805  INFO 18424 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.demo.controller.UserControllerTest]: UserControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-12-02 22:36:16.815  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.demo.ECommerceApplication for test class com.example.demo.controller.UserControllerTest
+2020-12-02 22:36:16.823  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2020-12-02 22:36:16.833  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2688b2be, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@30d3f583, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3344c1d7, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@73b034ca, org.springframework.test.context.support.DirtiesContextTestExecutionListener@104e6540, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3f9ee527, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2a41d17a, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@58a5b69c, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@3b22bcad, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@735dc133, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@57330423, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2257590f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@c3e5e3c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@11f752d1]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2020-12-02 22:36:16.888  INFO 18424 --- [           main] c.e.demo.controller.UserControllerTest   : Starting UserControllerTest on E7450 with PID 18424 (started by arslan in C:\Users\arslan\.jenkins\workspace\eCommerce)
+2020-12-02 22:36:16.890  INFO 18424 --- [           main] c.e.demo.controller.UserControllerTest   : No active profile set, falling back to default profiles: default
+2020-12-02 22:36:17.208  INFO 18424 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-02 22:36:17.230  INFO 18424 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22ms. Found 4 repository interfaces.
+2020-12-02 22:36:17.480  INFO 18424 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a2e3d825] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 22:36:17.645  INFO 18424 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2020-12-02 22:36:17.648  INFO 18424 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2020-12-02 22:36:17.694  INFO 18424 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-02 22:36:17.719  INFO 18424 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-02 22:36:18.096  INFO 18424 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 22:36:18.536  INFO 18424 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@458500d1, org.springframework.security.web.context.SecurityContextPersistenceFilter@7712c315, org.springframework.security.web.header.HeaderWriterFilter@44a972b4, org.springframework.web.filter.CorsFilter@59cbeaee, org.springframework.security.web.authentication.logout.LogoutFilter@5eaa6f76, com.example.demo.security.JWTAuthenticationFilter@3299ee2c, com.example.demo.security.JWTAuthenticationVerificationFilter@542759f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a9a187b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5529fd4e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@68ac6e6e, org.springframework.security.web.session.SessionManagementFilter@4848681d, org.springframework.security.web.access.ExceptionTranslationFilter@1926806c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@34a06981]
+2020-12-02 22:36:19.042  INFO 18424 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-02 22:36:19.075  WARN 18424 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-02 22:36:19.727  INFO 18424 --- [           main] c.e.demo.controller.UserControllerTest   : Started UserControllerTest in 2.882 seconds (JVM running for 30.363)
+2020-12-02 22:36:19.738  INFO 18424 --- [           main] c.e.demo.controllers.UserController      : New createUser request for user: null
+2020-12-02 22:36:19.738 ERROR 18424 --- [           main] c.e.demo.controllers.UserController      : Password length 3 does not match requirement for user: null
+2020-12-02 22:36:19.758  INFO 18424 --- [           main] c.e.demo.controllers.UserController      : New createUser request for user: null
+2020-12-02 22:36:19.759 ERROR 18424 --- [           main] c.e.demo.controllers.UserController      : Password fields do not match for user: null
+2020-12-02 22:36:19.768  INFO 18424 --- [           main] c.e.demo.controllers.UserController      : New createUser request for user: test
+2020-12-02 22:36:19.769  INFO 18424 --- [           main] c.e.demo.controllers.UserController      : Successfully created user: test
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.988 s - in com.example.demo.controller.UserControllerTest
+[INFO] Running com.example.demo.ECommerceApplicationTests
+2020-12-02 22:36:19.775  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.demo.ECommerceApplicationTests], using SpringBootContextLoader
+2020-12-02 22:36:19.805  INFO 18424 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.example.demo.ECommerceApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-12-02 22:36:19.812  INFO 18424 --- [           main] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.demo.ECommerceApplicationTests]: ECommerceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-12-02 22:36:19.823  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.demo.ECommerceApplication for test class com.example.demo.ECommerceApplicationTests
+2020-12-02 22:36:19.830  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener, org.springframework.security.test.context.support.ReactorContextTestExecutionListener]
+2020-12-02 22:36:19.833  INFO 18424 --- [           main] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5a1ddc7c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@362fbd98, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@11e36e5c, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2620264e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@126ae0ca, org.springframework.test.context.transaction.TransactionalTestExecutionListener@59e24c62, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5379488c, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@744c16fb, org.springframework.security.test.context.support.ReactorContextTestExecutionListener@31e5d408, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7aaf0f0a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@638b05fb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@77e42cbf, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@68bef3df, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6aeb769d]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.5.RELEASE)
+
+2020-12-02 22:36:19.887  INFO 18424 --- [           main] c.e.demo.ECommerceApplicationTests       : Starting ECommerceApplicationTests on E7450 with PID 18424 (started by arslan in C:\Users\arslan\.jenkins\workspace\eCommerce)
+2020-12-02 22:36:19.888  INFO 18424 --- [           main] c.e.demo.ECommerceApplicationTests       : No active profile set, falling back to default profiles: default
+2020-12-02 22:36:20.251  INFO 18424 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2020-12-02 22:36:20.270  INFO 18424 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18ms. Found 4 repository interfaces.
+2020-12-02 22:36:20.418  INFO 18424 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a2e3d825] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-02 22:36:20.555  INFO 18424 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2020-12-02 22:36:20.558  INFO 18424 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2020-12-02 22:36:20.613  INFO 18424 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-12-02 22:36:20.628  INFO 18424 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-02 22:36:20.796  INFO 18424 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 22:36:21.361  INFO 18424 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16576a6, org.springframework.security.web.context.SecurityContextPersistenceFilter@297bbd41, org.springframework.security.web.header.HeaderWriterFilter@17596317, org.springframework.web.filter.CorsFilter@70b037ac, org.springframework.security.web.authentication.logout.LogoutFilter@29e8c09c, com.example.demo.security.JWTAuthenticationFilter@1dbe592f, com.example.demo.security.JWTAuthenticationVerificationFilter@4e09c3b0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3b5f72fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67c2ff5d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64f34c91, org.springframework.security.web.session.SessionManagementFilter@375f276e, org.springframework.security.web.access.ExceptionTranslationFilter@1b513ce8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1ca55d5]
+2020-12-02 22:36:21.765  INFO 18424 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-02 22:36:21.789  WARN 18424 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-02 22:36:22.371  INFO 18424 --- [           main] c.e.demo.ECommerceApplicationTests       : Started ECommerceApplicationTests in 2.525 seconds (JVM running for 33.007)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.592 s - in com.example.demo.ECommerceApplicationTests
+2020-12-02 22:36:22.397  INFO 18424 --- [       Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-02 22:36:22.402  INFO 18424 --- [       Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 22:36:22.404  INFO 18424 --- [       Thread-4] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-02 22:36:22.405  INFO 18424 --- [       Thread-4] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 22:36:22.409  INFO 18424 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-02 22:36:22.411  INFO 18424 --- [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 22:36:22.412  INFO 18424 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2020-12-02 22:36:22.413  INFO 18424 --- [       Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-12-02 22:36:22.418  INFO 18424 --- [       Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-02 22:36:22.422  INFO 18424 --- [       Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-02 22:36:22.434  INFO 18424 --- [       Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 22:36:22.434  INFO 18424 --- [      Thread-10] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-02 22:36:22.436  INFO 18424 --- [      Thread-10] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-02 22:36:22.438  INFO 18424 --- [      Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2020-12-02 22:36:22.449  INFO 18424 --- [       Thread-4] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2020-12-02 22:36:22.449  INFO 18424 --- [       Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2020-12-02 22:36:22.452  INFO 18424 --- [       Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-02 22:36:22.453  INFO 18424 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2020-12-02 22:36:22.463  INFO 18424 --- [      Thread-10] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2020-12-02 22:36:22.466  INFO 18424 --- [       Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- maven-jar-plugin:3.1.1:jar (default-jar) @ auth-course ---
+[INFO] Building jar: C:\Users\arslan\.jenkins\workspace\eCommerce\target\auth-course-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:2.1.5.RELEASE:repackage (repackage) @ auth-course ---
+[INFO] Replacing main artifact with repackaged archive
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  45.291 s
+[INFO] Finished at: 2020-12-02T22:36:25-06:00
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
